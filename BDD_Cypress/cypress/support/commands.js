@@ -24,7 +24,11 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
+import 'cypress-file-upload';
+import 'cypress-iframe';
 
-
-
-
+Cypress.Commands.add('login', (email, password) => {  
+    cy.get('#login-form_email').type(email)
+    cy.get('#login-form_password').type(password)
+    cy.get('.ant-btn').click()
+})

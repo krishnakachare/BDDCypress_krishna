@@ -14,7 +14,9 @@
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
+    
   },
+  
   "author": "krishna",
   "license": "ISC"
 }
